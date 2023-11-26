@@ -1,12 +1,15 @@
 import "./App.scss";
+import Header from "./components/header/Header";
+import Container from "@mui/material/Container";
 
 function App() {
   return (
     <>
-      <div className="text">
-        <h1>hello</h1>
-        <h2>from</h2>
-      </div>
+      <Container maxWidth="xl">
+        <h1 className="">hello</h1>
+        <h2>sjhj</h2>
+        <Header />
+      </Container>
     </>
   );
 }
