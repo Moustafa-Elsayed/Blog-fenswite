@@ -1,9 +1,12 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
     <>
-      <h1 className="text">hello</h1>
+      <div className="text">
+        <h1>hello</h1>
+        <h2>from</h2>
+      </div>
     </>
   );
 }

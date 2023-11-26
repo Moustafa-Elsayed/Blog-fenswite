@@ -1,0 +1,14 @@
+@import "./sass/variables.scss";
+
+.text {
+  color: $main-color;
+  background-color: $main-color;
+  text-align: center;
+  & h1 {
+    color: red;
+  }
+  & h2 {
+    color: yellow;
+    font-size: 100px;
+  }
+}
