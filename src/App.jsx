@@ -6,8 +6,6 @@ function App() {
   return (
     <>
       <Container maxWidth="xl">
-        <h1 className="">hello</h1>
-        <h2>sjhj</h2>
         <Header />
       </Container>
     </>

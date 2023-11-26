@@ -3,23 +3,18 @@ import "./header.scss";
 import { Fragment } from "react";
 import {
   Box,
-  Button,
   ListItemButton,
   ListItemText,
   AppBar,
   Toolbar,
-  Typography,
-  } from "@mui/material";
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Badge from "@mui/material/Badge";
-
 
 const Header = () => {
-    //   const [open, setOpen] = useState("none");
-    //   const [ope, setOpe] = useState(false);
-    //   const [close, setClose] = useState("permanent");
-  
+  //   const [open, setOpen] = useState("none");
+  //   const [ope, setOpe] = useState(false);
+  //   const [close, setClose] = useState("permanent");
+
   return (
     <>
       <Fragment>
@@ -34,75 +29,45 @@ const Header = () => {
               className="nav-bar"
               sx={{ justifyContent: "space-between" }}
             >
-              <Typography
-                variant="p"
-                className="logo"
-                sx={{ color: "orange", cursor: "pointer" }}
-                onClick={() => {}}
-              >
-                MarketEase
-              </Typography>
+              <img src="./images/Logo.png" alt="" />
               <Box sx={{ display: { xs: "none", md: "block" } }}>
                 <Box sx={{ display: "flex", marginRight: "60px" }}>
-                  <ListItemButton
-                    onClick={() => {
-                    }}
-                    sx={{
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                      fontWeight: "900 !important",
-                    }}
-                  >
+                  <ListItemButton>
                     <ListItemText
                       variant="p"
                       primary="Home"
-                      className="home"
-                      sx={{
-                        color: "orange",
-
-                        marginRight: "30px",
-                        marginLeft: "30px",
-                        textAlign: "center",
-                        "&:hover": {
-                          color: "#f26522",
-                          backgroundColor: "transparent",
-                        },
-                      }}
+                      className="appbar-links"
                     />
                   </ListItemButton>
-
-                  <ListItemButton
-                    sx={{
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                    }}
-                    onClick={() => {}}
-                  >
+                  <ListItemButton>
                     <ListItemText
-                      primary="Product"
-                      sx={{
-                        color: "orange",
-                        marginRight: "30px",
-                        marginLeft: "30px",
-                        textAlign: "center",
-                        "&:hover": {
-                          color: "#f26522",
-                          backgroundColor: "transparent",
-                        },
-                      }}
+                      variant="p"
+                      primary="Blog"
+                      className="appbar-links"
                     />
                   </ListItemButton>
-
-              
+                  <ListItemButton>
+                    <ListItemText
+                      variant="p"
+                      primary="About Us"
+                      className="appbar-links"
+                    />
+                  </ListItemButton>
+                  <ListItemButton>
+                    <ListItemText
+                      variant="p"
+                      primary="Contact us"
+                      className="appbar-links"
+                    />
+                  </ListItemButton>
+                  <button className="btn">Subscribe</button>
                 </Box>
               </Box>
 
               <MenuIcon
                 onClick={() => {
-                //   setClose("temporary");
-                //   setOpen("block");
+                  //   setClose("temporary");
+                  //   setOpen("block");
                 }}
                 sx={{ display: { xs: "block", md: "none" }, color: "#343a40" }}
               />

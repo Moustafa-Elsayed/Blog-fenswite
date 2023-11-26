@@ -7,3 +7,12 @@ $fourth-color:#6D6E76;
 
 // button 
 $btnColor-hover:#EDC14A;
+// 
+@mixin btn{
+display: inline-flex;
+padding: 16px 48px;
+align-items: flex-start;
+gap: 12px;
+border: none;
+
+}
