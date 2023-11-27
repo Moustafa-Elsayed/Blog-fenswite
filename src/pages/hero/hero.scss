@@ -29,8 +29,7 @@
     height: 400px;
     top: 208px;
     color: white;
-    padding-right: $main-padding;
-    padding-left: $main-padding;
+   
     .firstText {
       color: #fff;
       font-family: Inter;
@@ -87,7 +86,7 @@
       width: auto;
     }
   }
- @media (max-width: 625px) {
+  @media (max-width: 625px) {
     .textContainer {
       width: auto;
       .firstText {
@@ -134,7 +133,7 @@
       }
       .btn {
         font-family: Sen;
-       
+
         background-color: $primary-color;
         &:hover {
           background-color: $btnColor-hover;

@@ -1,0 +1,9 @@
+@import "../../sass/variables.scss";
+
+.FeaturedHome {
+  border: 1px solid red;
+  margin-top: 139px;
+}
+.customContainer {
+  @include customContainer;
+}
