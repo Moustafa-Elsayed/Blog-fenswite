@@ -21,9 +21,11 @@
   line-height: 24px;
 }
 .appbar-links {
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
+color: $hero-color;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+margin-right: 24px;
 }
