@@ -1,14 +1,13 @@
 import "./App.scss";
 import Header from "./components/header/Header";
-import Container from "@mui/material/Container";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <>
-      <Container maxWidth="xl">
-        <Header />
-      </Container>
-    </>
+    <div className="custom-container">
+      <Header />
+      <Home />
+    </div>
   );
 }
 

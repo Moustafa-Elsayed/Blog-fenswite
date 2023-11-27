@@ -4,6 +4,8 @@ $primary-color:#FFD050;
 $secondary-color:#592EA9;
 $third-color:#4C4C4C;
 $fourth-color:#6D6E76;
+$hero-color:#fff;
+$main-padding:80px;
 
 // button 
 $btnColor-hover:#EDC14A;
@@ -14,5 +16,9 @@ padding: 16px 48px;
 align-items: flex-start;
 gap: 12px;
 border: none;
+}
 
+@mixin customContainer{
+    padding-left: $main-padding;
+    padding-right: $main-padding;
 }

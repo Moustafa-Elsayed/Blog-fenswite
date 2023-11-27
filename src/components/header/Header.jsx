@@ -29,8 +29,17 @@ const Header = () => {
               className="nav-bar"
               sx={{ justifyContent: "space-between" }}
             >
-              <img src="./images/Logo.png" alt="" />
-              <Box sx={{ display: { xs: "none", md: "block" } }}>
+              <img
+                src="./images/Logo.png"
+                alt=""
+                className="headerlogo"
+              />
+              <Box
+                sx={{
+                  paddingLeft: "80px",
+                  display: { xs: "none", md: "block" },
+                }}
+              >
                 <Box sx={{ display: "flex", marginRight: "60px" }}>
                   <ListItemButton>
                     <ListItemText

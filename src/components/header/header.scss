@@ -2,7 +2,11 @@
 
 .header {
   color: $primary-color;
+  
 }
+.headerlogo {
+    padding-left: 80px;
+  }
 .btn {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -14,7 +18,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 .appbar-links {
   font-family: Inter;
