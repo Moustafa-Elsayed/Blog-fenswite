@@ -25,62 +25,63 @@ const Header = () => {
             sx={{ backgroundColor: "black" }}
             elevation={2}
           >
-            <Toolbar
-              className="nav-bar"
-              sx={{ justifyContent: "space-between" }}
-            >
-              <img
-                src="./images/Logo.png"
-                alt=""
-                className="headerlogo"
-              />
-              <Box
-                sx={{
-                  paddingLeft: "80px",
-                  display: { xs: "none", md: "block" },
-                }}
-              >
-                <Box sx={{ display: "flex", marginRight: "60px" }}>
-                  <ListItemButton>
-                    <ListItemText
-                      variant="p"
-                      primary="Home"
-                      className="appbar-links"
-                    />
-                  </ListItemButton>
-                  <ListItemButton>
-                    <ListItemText
-                      variant="p"
-                      primary="Blog"
-                      className="appbar-links"
-                    />
-                  </ListItemButton>
-                  <ListItemButton>
-                    <ListItemText
-                      variant="p"
-                      primary="About Us"
-                      className="appbar-links"
-                    />
-                  </ListItemButton>
-                  <ListItemButton>
-                    <ListItemText
-                      variant="p"
-                      primary="Contact us"
-                      className="appbar-links"
-                    />
-                  </ListItemButton>
-                  <button className="btn">Subscribe</button>
-                </Box>
-              </Box>
+            <div className="customContainer">
+              <Toolbar
 
-              <MenuIcon
-                onClick={() => {
-                  //   setClose("temporary");
-                  //   setOpen("block");
-                }}
-                sx={{ display: { xs: "block", md: "none" }, color: "#343a40" }}
-              />
-            </Toolbar>
+                sx={{ justifyContent: "space-between",padding:"0" }}
+              >
+                <img src="./images/Logo.png" alt="" className="headerlogo" />
+                <Box
+                  sx={{
+                    paddingLeft: "80px",
+                    display: { xs: "none", md: "block" },
+                  }}
+                >
+                  <Box sx={{ display: "flex" }}>
+                    <ListItemButton>
+                      <ListItemText
+                        variant="p"
+                        primary="Home"
+                        className="appbar-links"
+                      />
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemText
+                        variant="p"
+                        primary="Blog"
+                        className="appbar-links"
+                      />
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemText
+                        variant="p"
+                        primary="About Us"
+                        className="appbar-links"
+                      />
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemText
+                        variant="p"
+                        primary="Contact us"
+                        className="appbar-links"
+                      />
+                    </ListItemButton>
+                    <button className="btn">Subscribe</button>
+                  </Box>
+                </Box>
+
+                <MenuIcon
+                  onClick={() => {
+                    //   setClose("temporary");
+                    //   setOpen("block");
+                  }}
+                  sx={{
+                    display: { xs: "block", md: "none" },
+                    color: "#343a40",
+                  }}
+                />
+              </Toolbar>
+            </div>
           </AppBar>
 
           <div className="overlay"></div>

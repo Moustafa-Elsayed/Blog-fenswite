@@ -1,9 +1,65 @@
 @import "../../sass/variables.scss";
 
 .FeaturedHome {
-  border: 1px solid red;
   margin-top: 139px;
 }
 .customContainer {
   @include customContainer;
+}
+.featurePost {
+  color: black;
+  .featureText {
+    color: $main-color;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    padding-bottom: 32px;
+  }
+}
+.feautureContainer {
+  width: 733px;
+  height: 724px;
+  padding: 32px;
+  img {
+    width: 669px;
+    height: 352px;
+  }
+  .firstText {
+    color: $third-color;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 16px 0;
+  }
+  .secondText {
+    color: $main-color;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    width: 669px;
+  }
+  .thirdtext {
+    color: $fourth-color;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 551px;
+    padding: 16px 0;
+  }
+  .btn {
+    background-color: $primary-color;
+    &:hover {
+      background-color: $btnColor-hover;
+    }
+  }
 }
