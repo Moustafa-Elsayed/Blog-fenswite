@@ -6,33 +6,59 @@ const FeaturedHome = () => {
   return (
     <div className="customContainer">
       <div className="FeaturedHome">
-        <Box sx={{ width: "100%" }}>
-          <Stack
-            justifyContent="space-between"
-            spacing={3}
-            direction="row"
-            flexWrap="wrap"
-          >
-            <div className="featurePost">
-              <div className="featureText">Featured Post</div>
-              <div className="feautureContainer">
-                <img src=".\images\feature.jpg" alt="" />
-                <div className="firstText">By John Doe l May 23, 2022</div>
-                <div className="secondText">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </div>
-                <div className="thirdtext">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
-                </div>
-                <button className="btn">Read More ></button>
-              </div>
+        <div className="featurePost">
+          <div className="featureText">Featured Post</div>
+          <div className="feautureContainer">
+            <img src=".\images\feature.jpg" alt="" />
+            <div className="firstText">By John Doe l May 23, 2022</div>
+            <div className="secondText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-            <div className="secondFeature">ddfdsf</div>
+            <div className="thirdtext">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident.
+            </div>
+            <button className="btn">Read More ></button>
+          </div>
+        </div>
+        <div className="secondFeature">
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={1}
+            sx={{ paddingBottom: "32px" }}
+          >
+            <div className="fisrtHeader">All Posts</div>
+            <div className="secondHeader">View All</div>
           </Stack>
-        </Box>
+          <div className="featureCard">
+            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="secondCradTitle">
+              8 Figma design systems that you can download for free today.
+            </div>
+          </div>
+          <div className="featureCard">
+            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="secondCradTitle">
+              8 Figma design systems that you can download for free today.
+            </div>
+          </div>
+          <div className="featureCard">
+            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="secondCradTitle">
+              8 Figma design systems that you can download for free today.
+            </div>
+          </div>
+          <div className="featureCard">
+            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="secondCradTitle">
+              8 Figma design systems that you can download for free today.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

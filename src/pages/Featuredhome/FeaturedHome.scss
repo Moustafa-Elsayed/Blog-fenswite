@@ -2,12 +2,20 @@
 
 .FeaturedHome {
   margin-top: 139px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap
 }
+
 .customContainer {
   @include customContainer;
 }
 .featurePost {
-  color: black;
+  width: 733px;
+
   .featureText {
     color: $main-color;
     font-family: Sen;
@@ -25,7 +33,7 @@
   padding: 32px;
   img {
     width: 669px;
-    height: 352px;
+    
   }
   .firstText {
     color: $third-color;
@@ -63,3 +71,47 @@
     }
   }
 }
+.secondFeature {
+  width: 707px;
+  height: 792px;
+  .fisrtHeader {
+    color: $main-color;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+  .secondHeader {
+    color: $secondary-color;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .featureCard {
+    width: 517px;
+    height: 181px;
+    .firstCradTitle {
+      color: $third-color;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 32px;
+    }
+    .secondCradTitle {
+      color: $main-color;
+      font-family: Sen;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      padding-left: 32px;
+    }
+  }
+}
+

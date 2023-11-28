@@ -27,8 +27,8 @@ const Header = () => {
           >
             <div className="customContainer">
               <Toolbar
-
-                sx={{ justifyContent: "space-between",padding:"0" }}
+              className="nav-bar"
+                sx={{ justifyContent: "space-between" }}
               >
                 <img src="./images/Logo.png" alt="" className="headerlogo" />
                 <Box
