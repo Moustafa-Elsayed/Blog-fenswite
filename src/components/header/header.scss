@@ -4,7 +4,9 @@
   color: $primary-color;
   
 }
-
+.customContainer{
+  @include customContainer
+}
 .nav-bar{
   padding: 0px !important;
 }

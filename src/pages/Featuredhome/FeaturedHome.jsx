@@ -44,7 +44,7 @@ const FeaturedHome = () => {
               8 Figma design systems that you can download for free today.
             </div>
           </div>
-          <div className="featureCard">
+          <div className="featureCard custom">
             <div className="firstCradTitle">
               By <span>John Doe</span> l Aug 23, 2021
             </div>
