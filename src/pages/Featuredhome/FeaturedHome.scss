@@ -8,6 +8,9 @@
   flex-direction: row;
   gap: 32px;
   flex-wrap: wrap;
+  span{
+    color: #592EA9;
+  }
 }
 
 .customContainer {
@@ -15,6 +18,7 @@
 }
 .featurePost {
   width: 733px;
+
 
   .featureText {
     color: $main-color;
@@ -30,6 +34,8 @@
     width: 733px;
     height: 724px;
     padding: 32px;
+      border: 1px solid  #6d6e761f;
+
     img {
       width: 669px;
     }

@@ -20,14 +20,15 @@ const Header = () => {
       <Fragment>
         <div className="appbar">
           <AppBar
-            className="nav-bar"
             position="fixed"
-            sx={{ backgroundColor: "black" }}
             elevation={2}
+            sx={{
+              backgroundColor: "#232536",
+            }}
           >
             <div className="customContainer">
               <Toolbar
-              className="nav-bar"
+                className="nav-bar"
                 sx={{ justifyContent: "space-between" }}
               >
                 <img src="./images/Logo.png" alt="" className="headerlogo" />

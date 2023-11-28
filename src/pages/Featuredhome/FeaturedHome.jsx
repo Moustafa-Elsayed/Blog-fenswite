@@ -10,7 +10,9 @@ const FeaturedHome = () => {
           <div className="featureText">Featured Post</div>
           <div className="feautureContainer">
             <img src=".\images\feature.jpg" alt="" />
-            <div className="firstText">By John Doe l May 23, 2022</div>
+            <div className="firstText">
+              By <span>John Doe</span> l May 23, 2022
+            </div>
             <div className="secondText">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
@@ -35,25 +37,33 @@ const FeaturedHome = () => {
             <div className="secondHeader">View All</div>
           </Stack>
           <div className="featureCard">
-            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="firstCradTitle">
+              By <span>John Doe</span> l Aug 23, 2021
+            </div>
             <div className="secondCradTitle">
               8 Figma design systems that you can download for free today.
             </div>
           </div>
           <div className="featureCard">
-            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="firstCradTitle">
+              By <span>John Doe</span> l Aug 23, 2021
+            </div>
             <div className="secondCradTitle">
               8 Figma design systems that you can download for free today.
             </div>
           </div>
           <div className="featureCard">
-            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="firstCradTitle">
+              By <span>John Doe</span> l Aug 23, 2021
+            </div>
             <div className="secondCradTitle">
               8 Figma design systems that you can download for free today.
             </div>
           </div>
           <div className="featureCard">
-            <div className="firstCradTitle">By John Deo l Aug 23, 2021</div>
+            <div className="firstCradTitle">
+              By <span>John Doe</span> l Aug 23, 2021
+            </div>
             <div className="secondCradTitle">
               8 Figma design systems that you can download for free today.
             </div>
