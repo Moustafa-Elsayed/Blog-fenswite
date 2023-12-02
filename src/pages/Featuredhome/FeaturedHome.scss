@@ -3,6 +3,9 @@
 .FeaturedHome {
   margin-top: 139px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 32px;
 
   span {
@@ -14,8 +17,10 @@
   @include customContainer;
 }
 .featurePost {
-  width: 70%;
+  width: 707px;
   height: 724px;
+  max-width: 100%;
+
   .featureText {
     color: $main-color;
     font-family: Sen;
@@ -29,9 +34,9 @@
   .feautureContainer {
     padding: 32px;
     border: 1px solid #6d6e761f;
-img{
-  width: 100%;
-}
+    img {
+      width: 100%;
+    }
     .firstText {
       color: $third-color;
       font-family: Inter;
@@ -69,7 +74,9 @@ img{
 }
 
 .secondFeature {
-  width: 30%;
+  width: 505px;
+  height: 724px;
+  max-width: 100%;
 
   height: 724px;
   .fisrtHeader {

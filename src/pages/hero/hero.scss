@@ -2,12 +2,11 @@
 .hero {
   background-image: url("./images/hero.png");
   background-position: center;
+  min-width: 100%;
+  min-height: calc(100vh + 80px);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
   position: relative;
-  z-index: 1;
 
   .overlay {
     position: absolute;
@@ -27,7 +26,6 @@
   }
   .textContainer {
     position: absolute;
-    padding-right: 80px;
     z-index: 1;
     width: 804px;
     height: 400px;
@@ -46,6 +44,7 @@
       padding-bottom: 24px;
     }
     .secondtText {
+      width: 803px;
       color: $hero-color;
       font-family: Sen;
       font-size: 56px;
@@ -69,6 +68,7 @@
       }
     }
     .thirdText {
+      width: 599px;
       color: $hero-color;
       font-family: Inter;
       font-size: 16px;
@@ -85,14 +85,326 @@
       }
     }
   }
-  @media (max-width: 1062px) {
+  // responsive
+
+  @media (max-width: 994px) {
+    .textContainer {
+      position: absolute;
+      z-index: 1;
+      width: 804px;
+      height: 400px;
+      top: 208px;
+      color: white;
+
+      .firstText {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-bottom: 24px;
+      }
+      .secondtText {
+        width: 790px;
+        color: $hero-color;
+        font-family: Sen;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2px;
+        padding-bottom: 24px;
+      }
+      .data {
+        color: $hero-color;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+        // & span {
+        //   color: $btnColor-hover;
+        // }
+      }
+      .thirdText {
+        width: 599px;
+        color: $hero-color;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .btn {
+        font-family: Sen;
+        background-color: $primary-color;
+        &:hover {
+          background-color: $btnColor-hover;
+        }
+      }
+    }
   }
-  @media (max-width: 625px) {
+  @media (max-width: 740px) {
+    .textContainer {
+      position: absolute;
+      z-index: 1;
+      width: 600px;
+      height: 400px;
+      top: 208px;
+      color: white;
+
+      .firstText {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .secondtText {
+        width: 636px;
+        color: $hero-color;
+        font-family: Sen;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2px;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .data {
+        color: $hero-color;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .thirdText {
+        width: 599px;
+        color: $hero-color;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .btn {
+        font-family: Sen;
+        background-color: $primary-color;
+        &:hover {
+          background-color: $btnColor-hover;
+        }
+      }
+    }
   }
-  @media (max-width: 425px) {
+  @media (max-width: 657px) {
+    .textContainer {
+      position: absolute;
+      z-index: 1;
+      width: auto;
+      height: auto;
+      top: 208px;
+      color: white;
+
+      .firstText {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .secondtText {
+        width: 500px;
+        color: $hero-color;
+        font-family: Sen;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2px;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .data {
+        color: $hero-color;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+        & span {
+          color: $btnColor-hover;
+        }
+      }
+      .thirdText {
+        width: 500px;
+        color: $hero-color;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .btn {
+        font-family: Sen;
+        background-color: $primary-color;
+        &:hover {
+          background-color: $btnColor-hover;
+        }
+      }
+    }
   }
-  @media (max-width: 320px) {
+  @media (max-width: 600px) {
+    .textContainer {
+      position: absolute;
+      z-index: 1;
+      width: auto;
+      height: auto;
+      top: 208px;
+      color: white;
+
+      .firstText {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .secondtText {
+        width: 400px;
+        color: $hero-color;
+        font-family: Sen;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2px;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .data {
+        color: $hero-color;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+        & span {
+          color: $btnColor-hover;
+        }
+      }
+      .thirdText {
+        width: 450px;
+        color: $hero-color;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .btn {
+        font-family: Sen;
+        background-color: $primary-color;
+        &:hover {
+          background-color: $btnColor-hover;
+        }
+      }
+    }
   }
-  @media (max-width: 321px) {
+  @media (max-width: 550px) {
+    .textContainer {
+      position: absolute;
+      z-index: 1;
+      width: auto;
+      height: auto;
+      top: 208px;
+      color: white;
+
+      .firstText {
+        color: #fff;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .secondtText {
+        width: 300px;
+        color: $hero-color;
+        font-family: Sen;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2px;
+        padding-bottom: 24px;
+        width: auto;
+      }
+      .data {
+        color: $hero-color;
+
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+        & span {
+          color: $btnColor-hover;
+        }
+      }
+      .thirdText {
+        width: 300px;
+        color: $hero-color;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 24px;
+      }
+      .btn {
+        font-family: Sen;
+        background-color: $primary-color;
+        &:hover {
+          background-color: $btnColor-hover;
+        }
+      }
+    }
   }
 }
