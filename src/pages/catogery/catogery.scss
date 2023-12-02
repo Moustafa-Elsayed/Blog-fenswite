@@ -1,0 +1,55 @@
+@import "../../sass/variables.scss";
+
+.catogery {
+  background: #fff;
+  padding-top: 128px;
+  .title {
+    color: $main-color;
+    text-align: center;
+    padding-bottom: 48px;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+  }
+  .catogeryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    .catogeryCard {
+      width: 296px;
+      height: 228px;
+      padding: 16px 32px;
+      border: 1px solid #6d6e7633;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+      .catogerytitle {
+        color: $main-color;
+
+        /* Heading H3 */
+        font-family: Sen;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: -1px;
+      }
+      .catogeryHeader {
+        color: $fourth-color;
+        width: 232px;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+      }
+    }
+  }
+}
